@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(180deg, rbga(247,247,247,1)25%, rbga(252,221,221,1)90%);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    flex-direction: column;
+    height: 100vh;
+    background-color: cadetblue;
+}
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    
+}
+
+.image img{
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    color: #000;
+}
+
+button{
+    background-color: aqua;
+    border: 0;
+    color: rgb(255, 0, 34);
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: black;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+button:hover{
+    color: blueviolet;
+
+}
+.header{
+    padding-top: .5cm;
+    font-weight: bolder;
+    padding-bottom: .5cm;
+    background-color: darkcyan;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+.comment-list{
+    margin: 0%;
+    padding: 0;
+    width:  13.28cm;
+    height: 4cm;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.comment{
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding-bottom: 0;
+
+}
+.comment h1{
+    padding: 0;
+}
+.comment-list  {
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/* .input{
+    justify-content: space-between;
+    align-items: center; j
+} */
+.breeds{
+    background-color: #7fffd4;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+select{
+    background-color: aqua;
+    border: 0;
+    color: rgb(255, 0, 34);
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: black;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+#likeBtn{
+    height: .5cm;
+    width: 1cm;
+    padding: 0;
+    margin: 0;
+    color:floralwhite;
+    background-color: black;
+
+}
+#dislikeBtn{
+    height: .5cm;
+    width: 1cm;
+    padding: 0;
+    margin: 0;
+    color:floralwhite;
+    background-color: black;
+    border-color: aliceblue;
+
+
+}
+#label1,#label2{
+   
+    
+    color:floralwhite;
+    background-color: black;
+    border-color: aliceblue;
+    font-weight: bolder;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+ #commentHeader{
+    margin: auto;
+   
+    display: flex;
+    color: blue;
+    font-style: italic;
+    font-weight: bolder;
+ }
+ #submit{
+    margin: 10px;
+    padding: auto;
+    height: .7cm;
+    width: 3cm;
+    font-weight: bolder;
+    font-style: italic;
+ }
+ #submit:hover{
+    color: blue;
+ }
+ .logo{
+    display: flex;
+    justify-items: first baseline;
+    height: 2cm;
+    float: left;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+ }
+ .logo:hover{
+    color: chartreuse;
+ }
+ /* .input{
+    font-weight: bolder;
+    font-size: larger;
+ } */
+ #dogButton{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+ }
+ #catButton{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+
+ }

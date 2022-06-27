@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+  <div class="logo">
+    <img src="images/logo.png" alt="">
+    <header class="header">ANIMAL IMAGES WEBPAGE</header>
+  </div>
+  <div class="images">
+    <div id ="dog-image" class="image">
+      <p>Random Dog images</p>
+    </div>
+    <div id ="cat-image" class="image">
+      <p>Random Cat images</p>
+    </div>
+    <div id="listbreeds" class="image">
+      <!-- <div class="slideshow" style="background-image: url('') "></div> -->
+      <P>Dog images by Breed</P>
+    </div>
+  </div>
+  <div class="buttons">
+    <button id = "dogButton">Fetch Dog</button>
+    <button id = "catButton">Fetch Cat</button>
+    <select class="listButton" id="select" onchange="loadBreed();">
+      <option value="">choose dog breed</option>
+    </select>
+  </div>
+  </div>
+  <div class="comment">
+    <div>
+      <h1 id = "commentHeader">Add Comment About My website</h1>
+    </div>
+    <div class="input">
+      <input type="text" id = "userName"placeholder="User Name">
+      <input type="text" id = "userComment"placeholder="Comment here" height="2cm" size="20">
+      <button id="likeBtn" onclick="likes()">
+        <i class="fa fa-thumbs-up"></i>
+      </button>
+      <label for="likeBtn" id ="label1">0</label>
+      <button id="dislikeBtn" onclick="dislikes()">
+        <i class="fa fa-thumbs-down"></i>
+      </button>
+      <label for="dislikeBtn" id="label2">0</label>
+      
+    </div>
+    <div>
+      <input type="submit" id="submit">
+    </div>
+    <div class="comment-list">
+      <p id= "commentData">
+        <ul id="unordered">
+        </ul>
+      </p>
+    </div>
+  </div>
+ 
+
+  
+
+
+
+
+
+
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+  
