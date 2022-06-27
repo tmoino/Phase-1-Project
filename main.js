@@ -1,4 +1,4 @@
-// document.addEventListener('DOMContentLoaded',() =>{
+// naming variables
   const dogImage = document.getElementById("dog-image")
   const dogBtn = document.getElementById("dogButton")
   const doglist = document.getElementById("listbreeds")
@@ -30,45 +30,18 @@
       // console.log(data.file)
       catImage.innerHTML = `<img src = "${data.file}">`
   );
-    
   }
 
-
-
-
-
-
-
-
-  // function fetchCatImage (){
-  //   fetch("https://api.thecatapi.com/v1/images/search")
-  //   .then (response => response.json)
-  //   .then (data => {
-  //      catImage.innerHTML = `<img src = "${data.url}"> `
-      
-      
-  //   });
-  // }
-
-function listBreed (){
-  fetch('')
-  .then (reponse => reponse.jsom)
-  .then(data =>{
-
-  })
-}
-
-likeBtn = document.getElementById("likeBtn")
-
-let count = 0;
+let likescount = 0;
+// adding likes
 function likes(){
-  updateDisplay(++count)
+  updateDisplay(++likescount)
 }
 function updateDisplay(val) {
   document.getElementById("label1").innerHTML = val;
 }
 let disCounter = 0;
-
+// adding dislikes
 function dislikes(){
   updateDisplapyDislikes (++disCounter)
 }
@@ -80,22 +53,18 @@ submitBtn.addEventListener( "click",function(){
   let data = ""
   let name = document.getElementById("userName").value
   let comment = document.getElementById("userComment").value
- 
-  // data = "User name :"+name+<br/> "User comment :"+comment
-  data = name+ "  :"+comment
+  data = name+ " :"+comment
   
  
   var li = document.createElement("li");
   var text = document.createTextNode(data);
   li.appendChild(text);
   document.getElementById("unordered").appendChild(li);
-})
- 
-const BREEDS_URL = 'https://dog.ceo/api/breeds/list/all';
+});
 
 const select = document.querySelector('.listButton');
-
-fetch(BREEDS_URL)
+// fetch the breeds list and geting it into the select options
+fetch("https://dog.ceo/api/breeds/list/all")
   .then(res => {
     return res.json();
   })
@@ -118,7 +87,7 @@ fetch(BREEDS_URL)
     // console.log(data.message)
     createslideshow(data.message)
   }
-
+// slide shows of the dog images 
   function createslideshow (images){
     // console.log (images)
     // doglist.innerHTML= `
