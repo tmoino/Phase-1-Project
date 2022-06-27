@@ -28,4 +28,4 @@ I have used different event listeners to (click, submit and OnChange)
 A wel structured HTML to build well stationed container for my images and comment section
 
 ---
-![alt text](images/Screenshot from 2022-06-27 17-05-12.png)
+[logo]:(images/Screenshot from 2022-06-27 17-05-12.png)
