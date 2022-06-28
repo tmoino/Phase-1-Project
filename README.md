@@ -52,6 +52,7 @@ Styling is fun try to style your html to give it a better look that will be easy
 This is where all the work goes have fun in this section  <br>
 A dry code with no repetation will make your work easier  <br>
 I used a couple of event listeners, variable, images etc
+
  ---
 
 ## conculsion
